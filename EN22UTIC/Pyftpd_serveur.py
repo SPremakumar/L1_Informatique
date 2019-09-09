@@ -16,7 +16,7 @@ def main():
     handler.banner = "Bienvenue dans Pyftpd-serveur" # Bannière
     handler.masquerade_address = "spremakumar.ddns.net" # DOMAINE ou IP
     handler.passive_ports = range(60000, 65535) # Passive mode 
-    address = ('ip', 2121) 
+    address = ('ip', 2121) # Entrez votre Ip adresse
     server = FTPServer(address, handler)
     server.max_cons = 256
     server.max_cons_per_ip = 5
