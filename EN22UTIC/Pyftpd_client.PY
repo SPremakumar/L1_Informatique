@@ -11,7 +11,7 @@ print('\n')
 
 def main():
 	ftp = FTP('') # Nom de votre FTP 
-	ftp.connect('192.168.1.51',2121) # Adresse IP ou Hostname ; port 
+	ftp.connect('ip_addr',2121) # Adresse IP ou Hostname ; port 
 	ftp.login(user, passwd) # user : python-ftp ; passwd : test4
 	ftp.cwd('Python3vsPython2') # Nom du dossier qui est dans le serveur FTP
 	ftp.retrlines('LIST') # Pour lister tous les fichiers contenues dans le dossier
