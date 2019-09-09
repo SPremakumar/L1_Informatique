@@ -4,7 +4,7 @@
 import socket
 
 def Main():
-	host =  "192.168.1.51"
+	host =  "" #Entrez votre adresse Ip ou hostname
 	port = 5000
 	co_serveur = socket.socket() # 1. Créer un socket
 	co_serveur.connect((host, port)) # 2. Connexion du client avec le serveur
